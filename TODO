@@ -1,2 +1,3 @@
-Make it distro-agnostic (Remove dependency on KDE API)
-..
+-Beautify the code
+-Make it distro-agnostic (Remove dependency on KDE API)
+
