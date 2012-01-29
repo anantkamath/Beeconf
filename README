@@ -6,5 +6,7 @@ PyQt4
 PyKDE4
 
 HOW TO USE:
+You need to have bumblebee installed first
+
 Just run the beeconf.py file
 $python beeconf.py
