@@ -1,2 +1,3 @@
-Make it distro-agnostic (Remove dependency on KDE API)
-..
+-Beautify the code: Rename some functions and object names and restructure the main class so as to make the code more easily understandable
+-Make it distro-agnostic (Remove dependency on KDE API)
+
