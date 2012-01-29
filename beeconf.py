@@ -148,7 +148,7 @@ class Ui_MainWin(object):
     
       else:
 	newdir=os.path.join(os.environ['HOME'],'.local/share/applications/')
-	if(os.path.dirname(str(filename)).endswith('kde4/')):
+	if(os.path.dirname(str(filename)).endswith('kde4')):
 	  newdir=os.path.join(newdir,'kde4/')
 	newpath=os.path.join(newdir,os.path.basename(str(filename)))
 	f2 = open(newpath, 'w')
@@ -163,14 +163,6 @@ class Ui_MainWin(object):
   
       f=f1.read()
       f = f.replace("optirun", "")
-      ''' What the fuck?
-      f=f1.readlines()
-      for line in f:
-	if line.startswith("Exec=") and ("optirun" in line):
-	  print "found"
-	  if(line.replace("optirun"," ")):
-	    print"removed 1 instance"
-	f2.write(line)'''
       if self.isLocal(filename):
 	f2 = open(tempfile, 'w')
 	f2.write(f)
@@ -180,7 +172,7 @@ class Ui_MainWin(object):
     
       else:
 	newdir=os.path.join(os.environ['HOME'],'.local/share/applications/')
-	if(os.path.dirname(str(filename)).endswith('kde4/')):
+	if(os.path.dirname(str(filename)).endswith('kde4')):
 	  newdir=os.path.join(newdir,'kde4/')
 	newpath=os.path.join(newdir,os.path.basename(str(filename)))
 	f2 = open(newpath, 'w')
@@ -236,11 +228,11 @@ class Ui_MainWin(object):
       elif(self.r2.isChecked()):
 	if(self.isOpti(filename)):
 	  
-	  self.statusbar.showMessage("Default GPU is for selected application already nVidia")
+	  self.statusbar.showMessage("Default GPU is for selected application is already nVidia")
 	else:
 	  self.convertToOpti(filename)
 	  self.statusbar.clearMessage()
-	  self.statusbar.showMessage("Default GPU is for selected application now nVidia")
+	  self.statusbar.showMessage("Default GPU is for selected application is now nVidia")
 
       else:
 	self.statusbar.clearMessage()
