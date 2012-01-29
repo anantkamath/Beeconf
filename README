@@ -1,5 +1,5 @@
 Beeconf is a utility for Bumblebee which allows you to change the default GPU (nvidia or intel) for running a particular application.
-Currently works only in KDE, since it uses pyKDE libraries.
+Works best in KDE since it uses PyKDE libs.
 
 DEPENDENCIES:
 PyQt4
